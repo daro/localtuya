@@ -184,7 +184,7 @@ class TuyaDevice(pytuya.TuyaListener, pytuya.ContextualLogger):
             self._connect_task = asyncio.create_task(self._make_connection())
 
     async def _make_connection(self):
-        """Subscribe localtuya entity events."""
+        """Subscribe darolocaltuya entity events."""
         self.info("Trying to connect to %s...", self._dev_config_entry[CONF_HOST])
 
         try:
@@ -394,7 +394,7 @@ class LocalTuyaEntity(RestoreEntity, pytuya.ContextualLogger):
         self.set_logger(logger, self._dev_config_entry[CONF_DEVICE_ID])
 
     async def async_added_to_hass(self):
-        """Subscribe localtuya events."""
+        """Subscribe darolocaltuya events."""
         await super().async_added_to_hass()
 
         self.debug("Adding %s with configuration: %s", self.entity_id, self._config)

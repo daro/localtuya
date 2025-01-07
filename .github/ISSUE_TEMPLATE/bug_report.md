@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve localtuya
+about: Create a report to help us improve darolocaltuya
 title: ''
 labels: 'bug'
 assignees: ''
@@ -52,8 +52,8 @@ assignees: ''
   In configuration.yaml:
 
   logger.set_level
-  custom_components.localtuya: debug
-  custom_components.localtuya.pytuya: debug
+  custom_components.darolocaltuya: debug
+  custom_components.darolocaltuya.pytuya: debug
 -->
 ```
 put your log output between these markers

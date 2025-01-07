@@ -1,6 +1,6 @@
-"""Constants for localtuya integration."""
+"""Constants for darolocaltuya integration."""
 
-DOMAIN = "localtuya"
+DOMAIN = "darolocaltuya"
 
 DATA_DISCOVERY = "discovery"
 DATA_CLOUD = "cloud_data"
